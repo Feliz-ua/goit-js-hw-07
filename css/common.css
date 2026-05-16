@@ -12,3 +12,21 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap; /* Дозволяє перенос на новий рядок, якщо екран маленький */
+  gap: 24px; /* Відстань між картинками */
+  list-style-type: none; /* Прибираємо маркери списку */
+  padding: 0;
+  margin: 0;
+  justify-content: center; /* Вирівнювання по центру */
+}
+
+.gallery img {
+  display: block;
+  width: 360px; /* Фіксована ширина для однакового розміру */
+  height: 240px; /* Фіксована висота */
+  object-fit: cover; /* Зберігає пропорції та обрізає зайве, щоб не розтягувати картинку */
+  border-radius: 4px; /* Трохи заокруглюємо кути для краси */
+}
